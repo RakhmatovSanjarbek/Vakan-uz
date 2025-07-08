@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="sanjarbek.uz.vakanuz.ui.screens.bottom_nav_item.search.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_searchDetailFragment"
+            app:destination="@id/searchDetailFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="sanjarbek.uz.vakanuz.ui.screens.profile.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/searchDetailFragment"
+        android:name="sanjarbek.uz.vakanuz.ui.screens.search_detail.SearchDetailFragment"
+        android:label="SearchDetailFragment" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="sanjarbek.uz.vakanuz.ui.screens.bottom_nav_item.add.AddFragment"
+        android:label="AddFragment" />
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="sanjarbek.uz.vakanuz.ui.screens.bottom_nav_item.message.MessagesFragment"
+        android:label="MessagesFragment" />
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="sanjarbek.uz.vakanuz.ui.screens.bottom_nav_item.saved.SavedFragment"
+        android:label="SavedFragment" />
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="sanjarbek.uz.vakanuz.ui.screens.bottom_nav_item.users.UsersFragment"
+        android:label="UsersFragment" />
+</navigation>

@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Vakanuz" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/color_blue</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="BottomNavActiveIndicatorStyle" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@android:color/transparent</item> <!-- Shaffof rang -->
+    </style>
+
+
+</resources>

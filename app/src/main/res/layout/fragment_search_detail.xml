@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_for_screen">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:padding="16dp"/>
+
+    <ImageView
+        android:id="@+id/iv_saved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_saved"
+        android:padding="16dp"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/tv_tollbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Matematika o'qituvchisi kerak"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/exo2_medium"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:maxLength="23"
+        android:visibility="gone"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/iv_back"
+        android:layout_above="@id/ll_buttons"
+        android:paddingHorizontal="16dp"
+        android:clipToPadding="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_job_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Matematika o'qituvchisi kerak"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/exo2_medium"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="8 000 000 - 12 000 000 UZS"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/exo2_medium"/>
+
+            <TextView
+                android:id="@+id/tv_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Region: Toshkent, Yunusobod"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:fontFamily="@font/exo2_medium"/>
+
+            <TextView
+                android:id="@+id/tv_employment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Employment: To'liq bandlik"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:fontFamily="@font/exo2_medium"/>
+
+            <TextView
+                android:id="@+id/tv_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Experience: 1-3 yil"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:fontFamily="@font/exo2_medium"/>
+
+            <TextView
+                android:id="@+id/tv_graph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Graph: 5/2"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:fontFamily="@font/exo2_medium"/>
+
+            <TextView
+                android:id="@+id/tv_working_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Working time: 8 soat"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:fontFamily="@font/exo2_medium"/>
+
+            <TextView
+                android:id="@+id/tv_work_format"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Work format: Remote"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:fontFamily="@font/exo2_medium"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:elevation="0dp"
+                app:elevation="0dp"
+                android:radius="8dp"
+                app:strokeWidth="0dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginTop="16dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="16dp">
+                    <TextView
+                        android:id="@+id/tv_organization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Aloqa Bank"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/exo2_medium"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/img_official_logo"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="2dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_purpose_work"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/exo2_medium"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_purpose_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Bank mobil ilovalarini ishlab chiqish, ularni yangilab borish, foydalanuvchi tajribasini yaxshilash, hamda xavfsizlikni ta'minlash. Loyihalarda faol ishtirok etish va yangi funksiyalarni integratsiya qilish."
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:fontFamily="@font/exo2_medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_requirements"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/exo2_medium"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_requirements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Kotlin dasturlash tilini chuqur bilish, Android SDK bilan ishlash tajribasi, REST API’lar bilan integratsiya qilish, Git va Clean Architecture prinsiplarini tushunish."
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:fontFamily="@font/exo2_medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_we_offer"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/exo2_medium"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_we_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Yuqori darajadagi texnik jamoa, zamonaviy ofis, kafolatlangan bonus tizimi, yillik professional rivojlanish uchun budjet, va bepul tushlik."
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:fontFamily="@font/exo2_medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_additional_information"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/exo2_medium"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_additional_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Minimal 1 yil ishlab chiqarish tajribasi, portfolioda kamida 1 ta real loyiha bo‘lishi kerak. Ilovani Play Market’da ko‘rish mumkin bo‘lishi maqsadga muvofiq."
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                android:fontFamily="@font/exo2_medium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_technology"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/exo2_medium"
+                android:layout_marginTop="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_technology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_languages"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/exo2_medium"
+                android:layout_marginTop="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:elevation="0dp"
+            app:elevation="0dp"
+            app:cornerRadius="8dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/str_contact"
+            app:rippleColor="@color/gray"
+            android:textColor="@color/color_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/exo2_medium"
+            app:icon="@drawable/ic_call"
+            app:iconTint="@color/color_blue"
+            app:iconGravity="textStart" />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_weight="0.5"
+            android:elevation="0dp"
+            app:elevation="0dp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="@color/color_blue"
+            android:text="@string/str_messages"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/exo2_medium"
+            app:icon="@drawable/ic_messages"
+            app:iconTint="@color/white"
+            app:iconGravity="textStart"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

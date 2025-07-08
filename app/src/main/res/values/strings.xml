@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Vakan.uz</string>
+    <string name="str_search">Search</string>
+    <string name="str_saved">Saved</string>
+    <string name="str_add">Add</string>
+    <string name="str_messages">Messages</string>
+    <string name="str_profile">Profile</string>
+    <string name="str_welcome">Welcome</string>
+    <string name="str_sanjarbek_rahmatov">Sanjarbek Rahmatov</string>
+    <string name="str_search_for_job">Search for job postings</string>
+    <string name="str_price">Price:</string>
+    <string name="str_experience">Experience:</string>
+    <string name="str_without_experience">Without experience</string>
+    <string name="str_contact">Contact</string>
+    <string name="str_employment">Employment:</string>
+    <string name="str_graph">Graph:</string>
+    <string name="str_working_time">Working time:</string>
+    <string name="str_work_format">Work format:</string>
+    <string name="str_region">Region:</string>
+    <string name="str_purpose_work">Purpose work</string>
+    <string name="str_requirements">Requirements</string>
+    <string name="str_we_offer">We Offer</string>
+    <string name="str_additional_information">Additional information</string>
+    <string name="str_technology">Technology</string>
+    <string name="str_languages">Languages:</string>
+    <string name="str_users">Users</string>
+    <string name="str_log_out">Log out</string>
+    <string name="str_edit_resume">Edit resume</string>
+    <string name="srt_resume_download">Resume download</string>
+    <string name="str_edit_language">Edit language</string>
+    <string name="str_edit_theme">Edit theme</string>
+</resources>
